@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "wrapped-localstorage": "^1.0.46"
+  }
+}

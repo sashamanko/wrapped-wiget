@@ -1,0 +1,23 @@
+{
+  "name": "wrapped-localstorage",
+  "version": "1.0.46",
+  "description": "Библиотека для работы с local storage.",
+  "keywords": [
+    "local",
+    "storage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashamanko/wrapped-localstorage.git"
+  },
+  "main": "dist/lockalStorage.js",
+  "scripts": {
+    "build": "npm install"
+  },
+  "author": "sasha-manko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sashamanko/wrapped-localstorage/issues"
+  },
+  "homepage": "https://github.com/sashamanko/wrapped-localstorage#readme"
+}

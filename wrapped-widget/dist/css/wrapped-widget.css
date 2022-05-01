@@ -1,0 +1,91 @@
+:root .widget-wrapper {
+  --wrapped-wiget-margin: 6px;
+  --wrapped-wiget-padding: 12px;
+  --wrapped-wiget-font-size: 18px;
+  --wrapped-wiget-color-accent: #a26af6;
+  --wrapped-wiget-background: #252525;
+  --wrapped-wiget-border: 1px solid #d1d1d166;
+  --wrapped-wiget-border-radius: 10px;
+  --wrapped-wiget-box-shadow: 0 2px 5px 1px #00000035;
+}
+
+/* Class
+__________________________________________________ */
+
+.d-flex {
+  display: flex;
+}
+
+.block {
+  padding: var(--wrapped-wiget-padding);
+  background: var(--wrapped-wiget-background);
+  border-radius: var(--wrapped-wiget-border-radius);
+  box-shadow: var(--wrapped-wiget-box-shadow);
+}
+
+/* Widget wrapper 
+__________________________________________________ */
+
+.widget-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #00000055;
+  z-index: 9999999999;
+}
+
+.widget-wrapper[data-widget-position='left top'] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.widget-wrapper[data-widget-position='center top'] {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.widget-wrapper[data-widget-position='right top'] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.widget-wrapper[data-widget-position='left center'] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.widget-wrapper[data-widget-position='center center'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget-wrapper[data-widget-position='right center'] {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.widget-wrapper[data-widget-position='left bottom'] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.widget-wrapper[data-widget-position='center bottom'] {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.widget-wrapper[data-widget-position='right bottom'] {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

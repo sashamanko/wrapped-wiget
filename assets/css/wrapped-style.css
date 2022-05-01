@@ -1,0 +1,129 @@
+/* Wrapped style
+__________________________________________________ */
+
+/* Variables
+__________________________________________________ */
+
+:root {
+  --margin: 12px;
+  --padding: 12px;
+  --font-size: 18px;
+  --line-height: 1;
+  --border-radius: 10px;
+}
+
+:root[data-theme='white'] {
+  --background-1: #d1d1d1;
+  --background-2: #ffffff;
+  --border-color: #1d1d1d66;
+  --color-accent: #4f11ba;
+  --color: #1b1b1b;
+  --box-shadow: 0 2px 5px 1px #403c4335;
+}
+
+:root[data-theme='dark'] {
+  --background-1: #1b1b1b;
+  --background-2: #252525;
+  --border-color: #d1d1d166;
+  --color-accent: #a26af6;
+  --color: #d1d1d1;
+  --box-shadow: 0 2px 5px 1px #00000035;
+}
+
+/* Block tags
+__________________________________________________ */
+
+/* Page */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  color: var(--color);
+  font-size: var(--font-size);
+  background: var(--background-1);
+  line-height: var(--line-height);
+  transition: background-color .3s;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  transition: background-color .3s;
+}
+
+/* Titles */
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.666rem;
+}
+
+h2 {
+  font-size: 1.444rem;
+}
+
+h3 {
+  font-size: 1.222rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: .888rem;
+}
+
+h6 {
+  font-size: .666rem;
+}
+
+p {
+  margin: 0;
+}
+
+/* String tags
+__________________________________________________ */
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+button {
+  padding: var(--padding);
+  color: var(--color);
+  background: var(--background-2);
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+}
+
+button:hover {
+  color: var(--hover-btn-color);
+  background: var(--color-accent);
+}
+
+/* Class
+__________________________________________________ */
+.container {
+  margin: 0 auto;
+}
+
+/* Media
+__________________________________________________ */
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+  }
+}

@@ -1,0 +1,41 @@
+.modal-form-header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  margin-bottom: var(--wrapped-wiget-margin);
+}
+
+.modal-form-header__close-btn {
+  padding: 0;
+  font-size: 1.444em;
+  transition: color .3s;
+  box-shadow: none;
+}
+
+.modal-form-header__close-btn:hover {
+  background: transparent;
+  color: var(--wrapped-wiget-color-accent);
+}
+
+.modal-form-body input {
+  width: 100%;
+  padding: 3px 7px;
+  color: var(--wrapped-wiget-color);
+  font-size: .888em;
+  background: var(--wrapped-wiget-background);
+  border: var(--wrapped-wiget-border);
+  border-radius: 5px;
+  outline: none;
+}
+
+.modal-form-body input:not(:first-child) {
+  margin-top: var(--wrapped-wiget-margin);
+}
+
+.modal-form-buttons-block {
+  margin-top: var(--wrapped-wiget-margin);
+}
+
+.modal-form-buttons-block__dismiss-btn {
+  width: 100%;
+}

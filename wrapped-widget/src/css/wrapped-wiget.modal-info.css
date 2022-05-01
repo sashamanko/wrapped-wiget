@@ -1,0 +1,20 @@
+.modal-info-header {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--wrapped-wiget-margin);
+  padding: 7px;
+}
+
+.modal-info-header__close-btn {
+  padding: 0;
+  font-size: 1.444em;
+  transition: color .3s;
+  box-shadow: none;
+}
+
+.modal-info-header__close-btn:hover {
+  background: transparent;
+  color: var(--wrapped-wiget-color-accent);
+}

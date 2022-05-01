@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk"  data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- JS | Wrapped local storage
+  __________________________________________________ -->
+  <!-- For github -->
+  <script src="./assets/libs/wrapped-localstorage/dist/wrapped-localstorage.min.js"></script>
+  <!-- <script src="./node_modules/wrapped-localstorage/dist/wrapped-localstorage.min.js"></script> -->
+  <!-- For theme -->
+  <script>
+    WrappedLocalStorage.has("wrapped-theme") && WrappedLocalStorage.get("wrapped-theme") !== 'white'
+      ? document.documentElement.dataset.theme = 'dark'
+      : document.documentElement.dataset.theme = 'white'
+  </script>
+
+  <!-- CSS | Google fonts 
+  __________________________________________________ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS | Remix icon
+  __________________________________________________ -->
+  <link rel="stylesheet" href="./assets/fonts/RemixIconFont/remixicon.css">
+
+  
+  <!-- CSS | Wrappes style
+    __________________________________________________ -->
+    <link rel="stylesheet" href="./assets/css/wrapped-style.css">
+    
+  <!-- Wrapped widget
+  __________________________________________________ -->
+  <link rel="stylesheet" href="./wrapped-widget/dist/fonts/Remix-icon/remixicon.css">
+  <link rel="stylesheet" href="./wrapped-widget/dist/css/wrapped-widget.css">
+  <link rel="stylesheet" href="./wrapped-widget/dist/css/wrapped-wiget.modal-info.css">
+  <link rel="stylesheet" href="./wrapped-widget/dist/css/wrapped-wiget.modal-submit.css">
+  <link rel="stylesheet" href="./wrapped-widget/dist/css/wrapped-wiget.modal-form.css">
+
+
+  <!-- CSS | My
+  __________________________________________________ -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  
+  <!-- Heder
+  __________________________________________________ -->
+  <header class="header">
+    <div class="header__container container d-flex">
+
+      <div class="header__logo d-flex">
+        <h1 class="header__logo__title">Wrapped widget</h1>
+        <a class="header__logo__link" href="#">by Sasha Manko</a>
+      </div>
+
+      <button class="header__them-btn js--theme-btn ri-moon-line"></button>
+    </div>
+  </header>
+
+  <!-- Main
+  __________________________________________________ -->
+  <main class="main">
+
+    <!-- Section | Buttons-->
+    <section class="buttons">
+      <div class="buttons__container container d-fex">
+
+        <button class="js--modal-info">Info modal</button>
+
+        <button class="js--modal-submit">Submit modal</button>
+
+        <button class="js--modal-form">Form modal</button>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS | Wrapped widget
+  __________________________________________________ -->
+  <script dist="./wrapped-widget/src/wrapped-widget.js" type="module"></script>
+
+  <script src="./assets/js/app.js" type="module"></script>
+</body>
+</html>
